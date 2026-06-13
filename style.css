@@ -12,36 +12,15 @@ body{margin: 0;
      align-items: center;
      justify-content: flex-start;
      text-align: center;
-  
-/* Base styles for Mobile (Screens under 768px) */
-body {
-  font-size: 16px;
-  padding: 10px;
+  .container {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to drop to the next line on mobile */
+  gap: 15px;
 }
 
-/* Tablet Layout (Screens 768px and wider) */
-@media (min-width: 768px) {
-  body {
-    padding: 20px;
-  }
+.card {
+  flex: 1 1 300px; /* Grows, shrinks, and aims for a base width of 300px */
 }
-
-/* Desktop Layout (Screens 1024px and wider) */
-@media (min-width: 1024px) {
-  body {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-}
-
-
- }
- /*Navigaton style*/
-  nav{width: 100%;
-  	  background-color: rgba(0, 0, 0, 1.0);
-  	  padding: 10px 0;
-
- }
   .nav-menu{list-style: none ;
   	        display: flex;
   	        justify-content: center;
