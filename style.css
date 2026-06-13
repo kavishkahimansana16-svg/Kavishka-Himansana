@@ -13,7 +13,26 @@ body{margin: 0;
      justify-content: flex-start;
      text-align: center;
   
+/* Base styles for Mobile (Screens under 768px) */
+body {
+  font-size: 16px;
+  padding: 10px;
+}
 
+/* Tablet Layout (Screens 768px and wider) */
+@media (min-width: 768px) {
+  body {
+    padding: 20px;
+  }
+}
+
+/* Desktop Layout (Screens 1024px and wider) */
+@media (min-width: 1024px) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
 
 
  }
